@@ -27,6 +27,8 @@ def criar_tela_start(largura, altura):
     return tela
 
 def criar_tela_start_loop():
+    largura =720
+    altura =480
     criar_tela_start(720, 480)#crio a tela entro no loop esperando inputs
     
     while True:
@@ -42,12 +44,12 @@ def criar_tela_start_loop():
                 print(event.key)
                 
                 if event.key == 13:
-                    criar_tela_selecao_de_jogo_loop()
+                    criar_tela_selecao_de_jogo_loop(largura, altura)
                     #inicia o jogo
                     
             if event.type == MOUSEBUTTONDOWN:
                 print(event)
-                criar_tela_selecao_de_jogo_loop()
+                criar_tela_selecao_de_jogo_loop(largura, altura)
                 
             if event.type == pygame.QUIT:
                 raise SystemExit

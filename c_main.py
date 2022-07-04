@@ -7,4 +7,6 @@ from v_tela_start import *
 	#criação de telas
 	#criação do tabuleiro do jogo (criação do jogo)
 	# chama a tela(V) , adiciona o numero(M) verifica de estar certo ...
+ 
+ 
 criar_tela_start_loop()
